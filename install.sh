@@ -30,9 +30,9 @@ cp ngrok.yml /opt/ngrok
 sed -i "s/<add_your_token_here>/$1/g" /opt/ngrok/ngrok.yml
 
 cd /opt/ngrok
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-unzip ngrok-stable-linux-amd64.zip
-rm ngrok-stable-linux-amd64.zip
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
+unzip ngrok-stable-linux-arm.zip
+rm ngrok-stable-linux-arm.zip
 chmod +x ngrok
 
 systemctl enable ngrok.service

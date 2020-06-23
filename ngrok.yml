@@ -1,14 +1,11 @@
 authtoken: <add_your_token_here>
-region: us
 tunnels:
   ssh:
-      proto:tcp
-      addr:22
-      metadata: '{"devID": "__DevID__", "comment": "__Comment__"}'
+    proto: tcp
+    addr: 22
+    metadata: '{"devID": "_pi1_", "comment": "_raspi3_"}'
   nodered:
-      proto: http
-      addr:1881
-      metadata:
-      auth: "username:password" #for adding http authentication
-      bind_tls: true
-  
+    proto: http
+    addr: 1881
+    auth: "usernam:password" #for adding http authentication
+    bind_tls: true
