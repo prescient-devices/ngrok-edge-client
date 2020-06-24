@@ -22,7 +22,7 @@ fi
 
 if [ ! -e ngrok.service ]; then
     git clone --depth=1 https://github.com/prescient-devices/ngrok-edge-client.git
-    cd systemd-ngrok
+    cd ngrok-edge-client
 fi
 cp ngrok.service /lib/systemd/system/
 mkdir -p /opt/ngrok
