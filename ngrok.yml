@@ -3,9 +3,9 @@ tunnels:
   ssh:
     proto: tcp
     addr: 22
-    metadata: '{"devID": "_pi1_", "comment": "_raspi3_"}'
+    metadata: '{"devID": "device_id", "comment": "__"}'
   nodered:
     proto: http
     addr: 1881
-    auth: "usernam:password" #for adding http authentication
+    auth: "pdi:abcdef" #for adding http authentication
     bind_tls: true
