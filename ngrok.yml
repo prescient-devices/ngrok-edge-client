@@ -1,11 +1,12 @@
+version: "2"
 authtoken: <add_your_token_here>
 tunnels:
   ssh:
     proto: tcp
     addr: 22
-    metadata: '{"devID": "device_id", "comment": "__"}'
-  nodered:
-    proto: http
-    addr: 1881
-    auth: "pdi:abcdef" #for adding http authentication
-    bind_tls: true
+    metadata: '{"devID": "device_id", "comment": ""}'
+  # nodered:
+  #   proto: http
+  #   addr: 1881
+  #   auth: "pdi:abcdef" #for adding http authentication
+  #   bind_tls: true
